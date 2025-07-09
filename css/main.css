@@ -1124,6 +1124,132 @@
   z-index: 0;
 }
 
+/* DESCRIPCIÓN DE SERVICIOS */
+
+/* --- Service Section --- */
+.service-section {
+  background: linear-gradient(to bottom, #000000, #2b2b2b);
+  color: white;
+  padding: 100px 150px;
+  margin-top: 80px;
+}
+
+.service-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb-wrapper {
+  margin-bottom: 10px; /* tight spacing as per design */
+}
+
+.breadcrumb-link {
+  color: #f6b10d;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+  color: white;
+}
+
+/* --- Header Layout --- */
+.service-header {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.service-text {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-title {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: white;
+}
+
+.service-description {
+  font-size: 21px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  margin-bottom: 18px;
+}
+
+.service-image {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  max-height: 95vh;
+}
+
+.service-image img {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  height: 100%;
+}
+
+/* --- Tech Grid --- */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px 40px;
+  border: 1px solid #f6b10d;
+  border-radius: 12px;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+.tech-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+}
+
+.tech-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+.cta-button-yellow {
+  background-color: #f6b10a;
+  color: white;
+  padding: 14px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid transparent;
+  max-width: 220px;
+}
+
+.cta-button-yellow:hover {
+  background-color: transparent;
+  border-color: #e8a80f;
+  border: 2px solid #e8a80f;
+}
+
 
 
 
@@ -1145,5 +1271,19 @@ body, html {
 }
 
 
+.service-image-lowcode {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  max-height: 130vh;
+}
 
+.service-image-lowcode img {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  height: 100%;
+}
 
