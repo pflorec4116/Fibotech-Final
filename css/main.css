@@ -446,6 +446,10 @@
    text-align: left;
    }
 
+   .expertise-card.horizontal-card.mobile-equipo {
+    display: none;
+   }
+
 
 
 
@@ -1287,3 +1291,140 @@ body, html {
   height: 100%;
 }
 
+
+@media (max-width: 768px) {
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+  }
+
+  .mobile-nav.active {
+    display: flex;
+  }
+
+
+  /* RESPONSIVE INICIO */
+
+.inicio-hero-content {
+  max-width: 600px;            /* Optional: limit width on large screens */
+  margin: 0 auto;              /* Horizontal centering */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;         /* Center child items horizontally */
+  text-align: center;          /* Center text content */
+}
+.inicio-buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+  align-items: center;
+}
+
+.inicio-heading-h1 {
+  font-size: 72px;
+  line-height: 105px;
+  text-align: center;
+  margin-left: 60px;
+}
+
+  .inicio-subheading-h2 {
+    display: none;
+  }
+
+  .inicio-button-yellow {
+    display: none;
+  }
+
+  .inicio-button-white {
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+}
+
+.inicio-expertos-section h1 {
+  font-size: 24px; }
+
+.expertise-grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* spacing between the rows */
+  }
+
+  .expertise-card {
+    width: 100%;
+  }
+
+  /* Horizontal cards should be two-column rows on mobile */
+  .horizontal-content {
+    display: flex;
+    flex-direction: row; /* Image left, text right */
+    gap: 16px;
+    align-items: center;
+  }
+
+  .horizontal-image {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .horizontal-text {
+    width: 55%;
+  }
+
+  .equipo-card-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expertise-card.horizontal-card.mobile-equipo {
+    display: block;
+    min-width: 730px;
+
+  }
+
+  .expertise-card.equipo-card {
+    display: none;
+  }
+
+  .expertise-image.horizontal-image-equipo {
+    max-width: 150px;
+    min-height: 180px;
+  }
+
+  @media (max-width: 490px) {
+
+    .expertise-card.horizontal-card.mobile-equipo {
+    display: block;
+    min-width: 450px;
+
+  }
+
+}
+
+}
